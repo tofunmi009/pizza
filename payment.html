@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="w3.css">
+    <script src="./bootstrap/jquery.js"></script>
+    <script src="./bootstrap/bootstrap.js"></script>
+    <title>Document</title>
+    <style>
+        body{
+            width: 70%;
+            margin: 110px;
+            background-color: white;
+        }
+        #deal, input[type=text]{
+         
+        }
+        div{
+            background-color: white;  
+        }
+      
+        .header {
+    list-style-type: none;
+    margin: 0 0 0px 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+  }
+        /*
+        div{
+    background-color: white;
+  width: 500px;
+  border:1px solid  rgba(128, 128, 128, 0.486);
+  padding: 50px;
+  margin: 130px;
+  -webkit-box-align: center;
+
+}
+        #deal, input[type=text]{
+            
+            height: 35px;
+            background-color:rgba(220, 220, 220, 0.507) ;
+            border: 1px solid rgba(220, 220, 220, 0.486) ;
+        }
+      */
+    </style>
+</head>
+<body>
+  <ul class="header">
+      
+    <img src="pizza.png" alt="logo" class="logo">
+    
+    <li style="float:right"><a class="act" href="#">REGISTER</a></li>
+    <li style="float:right"><a class="active" href="#">  SIGN IN /</a></li>
+    <img src="Account.png" alt="logo"class="acc" style="float:  right;">
+  </ul>
+    <div>
+    <form class="form-inline w3-panel w3-card-4" action="" method="post">
+       <p> <b>CHOOSE A DEAL</b></p>
+        
+        <br>
+        <select class="w3-select" id="deal">
+            <option value="">PIZ</option>
+            <option value="">PIZ</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <b>YOUR INFORMATION</b>
+        <br>
+        <p>Email*</p>
+        <p><input class="w3-input w3-border" type="text" name="mail" placeholder="Email Address" required></p>
+<br> 
+        <div class="w3-row-padding">
+          <div class="w3-half">
+        <label>First name*</label>
+        <input class="w3-input w3-border" type="text" name="fnam" id="" placeholder="First Name" required>
+        </div>
+        
+      
+        
+          <div class="w3-half">
+        <label>Last name*</label>
+        <input class="w3-input w3-border" type="text" name="lnam" id="" placeholder="Last Name" required>
+        </div>
+        </div>
+        <br>
+        <b>Select a payment method</b>
+        
+        <p><label><b>Card number</b></label>
+        <p><input class="w3-input" id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx"></p>
+
+        <p><input class="w3-input" type="text" name="date" id="" placeholder="Expiration Date" required></p>
+        <p><input class="w3-input" type="text" name="cvc" id="" placeholder="CVC"></p>
+                
+          <p> <button class="w3-btn w3-black"> Add </button></p>
+        
+    </form>
+    </div>
+</body>
+</html>     

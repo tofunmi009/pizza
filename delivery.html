@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="w3.css">
+    <script src="./bootstrap/jquery.js"></script>
+    <script src="./bootstrap/bootstrap.js"></script>
+    <style>
+           .header {
+    list-style-type: none;
+    margin: 0 0 0px 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+  }
+        body{
+           background:url(wall.jpg)
+        }
+        input[type=text],#box ,#pass{
+  width: 80%;
+  padding: 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid rgb(204, 196, 196);
+  border-radius: 4px;
+  border: none;
+  border: 1px solid rgba(128, 128, 128, 0.342);
+  display: inline-block;
+ 
+}
+input[type=submit] {
+    width:80%;
+    background-color: #00b9d1;
+    color:white;
+    padding: 24px;
+    margin: 08px;
+    border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+input[type=submit]:hover {
+  background-color: #1b4d1e;
+}
+
+
+    
+    </style>
+</head>
+<body>
+    <div>
+    <form action="#">
+        Full Name
+        <br>
+        <input class="w3-input" type="text" name="name" id="name">
+        <br>
+        Mobile Number
+        <br>
+        <input class="w3-input" type="text" name="phone" id="phone">
+        <br>
+        Email Address
+        <br>
+        <input class="w3-input" type="text" name="email" id="email">
+        <br>
+        Password
+        <br>
+        <input class="w3-input" type="password" name="pass" id="pass">
+        <br>
+        <input class="w3-input" type="checkbox" name="box" id="box">
+        <br>
+        <input type="submit" value="Submit">
+        <br>
+    </form>
+    </div>
+</body>
+</html>
